@@ -1,5 +1,6 @@
 'use strict';
-// Generated on 2015-06-01 using generator-playbook 2.0.1
+
+// Generated on 2015-05-30 using generator-playbook 2.0.1
 
 var gulp = require('gulp'),
     $ = require('gulp-load-plugins')(),
