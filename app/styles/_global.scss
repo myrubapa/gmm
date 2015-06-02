@@ -1,24 +1,56 @@
-body {
-  color: $medium-gray;
+.header-primary {
+  @include clearfix;
+  background: $orange;
+  color: $white;
+  left: 0;
+  opacity: .95;
+  padding: 1em;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+
+  .logo {
+    float: left;
+    margin-bottom: 0;
+  }
+
+  .phone-number {
+    float: right;
+    margin-bottom: 0;
+  }
 }
 
-.delete-me {
-  @include align-items(center);
-  @include display(flex);
-  @include justify-content(center);
-  height: 100vh;
 
-  .inner {
-    text-align: center;
+.container {
+  @include outer-container;
+  padding: 0 1em;
 
-    img {
-      margin-bottom: 0.15em;
+  @include media($x-large) {
+    padding: 0;
+  }
+}
+
+
+.content-primary {
+  .page-content {
+    padding: 3.5em 0;
+
+    @include media($medium) {
+      padding: 5em 0;
     }
 
-    h1 {
-      font-size: 2.25em;
-      font-weight: 200;
-      margin: 0;
+    @include media($large) {
+      padding: 7em 0;
+    }
+  }
+}
+
+
+.triptych {
+  article {
+    @include media($medium) {
+      @include span-columns(4);
     }
   }
 }

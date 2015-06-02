@@ -1,0 +1,56 @@
+.preview {
+  overflow: hidden;
+  position: relative;
+
+  img {
+    display: block;
+    margin: 0;
+  }
+
+  .preview-content {
+    @include transition(all .35s ease-in-out);
+    background-color: $black;
+    background-color: rgba($black, .45);
+    bottom: 0;
+    color: $white;
+    left: 0;
+    padding: .5em 1em 1em;
+    position: absolute;
+    right: 0;
+
+    @include media($medium) {
+      bottom: -45px;
+
+      &:hover {
+        bottom: 0;
+      }
+    }
+
+    .headline {
+      text-transform: uppercase;
+      font-size: .75em;
+
+      span {
+        font-family: 'Amatic SC', cursive;
+        font-size: 3.5em;
+        font-weight: 400;
+        display: block;
+      }
+    }
+
+    .read-more {
+      @include transition(all .35s ease-in-out);
+      border: 1px solid $white;
+      border-radius: 1.5em;
+      color: $white;
+      display: inline-block;
+      font-size: .85em;
+      padding: .25em .75em;
+
+      &:hover {
+        background: $white;
+        color: $black;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+%hero {
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+
+  .hero-headline {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 3.5em;
+    line-height: 1;
+    margin: 0 auto;
+    max-width: 38rem;
+
+    @include media($medium) {
+      font-size: 5em;
+    }
+
+    @include media($large) {
+      font-size: 6.5em;
+    }
+  }
+
+  .hero-subhead {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    margin: 0 auto 1em;
+    max-width: 38rem;
+
+    @include media($medium) {
+      font-size: 1.25em;
+    }
+  }
+
+  .btn {
+    @include transition(all .35s ease-in-out);
+    border: 1px solid $white;
+    padding: .75em 2.5em;
+    color: $white;
+
+    &:hover {
+      background: $white;
+      background-color: rgba($white, .45);
+    }
+  }
+}

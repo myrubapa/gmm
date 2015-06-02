@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {% include shared/styles.html %}
+    <link href='http://fonts.googleapis.com/css?family=Amatic+SC:700,400|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- build:js /scripts/modernizr.js -->
       <script src="/vendor/modernizr/modernizr.js"></script>
@@ -15,7 +17,16 @@
   </head>
 
   <body class="{{ page.body_class }}">
-    {{ content }}
+    <header id="header-primary" class="header-primary">
+      <div class="container">
+        <h1 class="logo">Good Measure Meals</h1>
+        <h3 class="phone-number">1.888.123.4567</h3>
+      </div>
+    </header>
+
+    <main id="content-primary" class="content-primary">
+      {{ content }}
+    </main>
 
     {% include shared/scripts.html %}
     {% include shared/google-analytics.html %}

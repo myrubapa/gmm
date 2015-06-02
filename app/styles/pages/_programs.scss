@@ -1,0 +1,86 @@
+.program {
+  article {
+    border-radius: $base-border-radius;
+    color: $white;
+    padding: 1em;
+
+    @include media($medium) {
+      @include span-columns(7);
+    }
+
+    @include media($large) {
+      @include span-columns(6);
+    }
+
+    @include media($x-large) {
+      @include span-columns(5);
+    }
+
+    img {
+      @include media($medium) {
+        @include span-columns(5);
+      }
+
+      &.left {
+        float: left;
+        margin-right: 1.5em;
+      }
+
+      &.right {
+        float: right;
+        margin-left: 1.5em;
+      }
+    }
+
+    .headline {
+      font-family: 'Open Sans', sans-serif;
+      text-transform: uppercase;
+
+      span {
+        display: block;
+        color: $white;
+        font-family: 'Amatic SC', cursive;
+        font-size: 3.5em;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+    }
+
+    ul {
+      @extend %default-ul;
+    }
+  }
+}
+
+
+.program {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &.eat-well {
+    background-image: url('../images/programs/bg-eat-well.jpg');
+    background-attachment: fixed;
+
+    article {
+      background: $black;
+      background: rgba($black, .45);
+    }
+  }
+
+
+  &.stay-healthy {
+    background-image: url('../images/programs/bg-stay-healthy.jpg');
+  }
+
+
+  &.do-good {
+    background-image: url('../images/programs/bg-do-good.jpg');
+    background-attachment: fixed;
+
+    article {
+      background: $black;
+      background: rgba($black, .45);
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.hero {
+  .item {
+    @extend %hero;
+    background-size: cover;
+    height:95vh;
+    padding: 8em 1em;
+    text-align: center;
+
+    @include media($medium) {
+      padding: 10em 1em;
+    }
+
+    @include media($large) {
+      padding: 11em 0;
+      max-height: 700px;
+    }
+
+    @include media($x-large) {
+      padding: 12em 0;
+    }
+
+    &.slide-one {
+      background-image: url('../images/hero/slide1.jpg');
+    }
+
+    &.slide-two {
+      background-image: url('../images/hero/slide2.jpg');
+    }
+
+    &.slide-three {
+      background-image: url('../images/hero/slide3.jpg');
+    }
+
+    &.slide-four {
+      background-image: url('../images/hero/slide2.jpg');
+    }
+  }
+}
+
+//CAROUSEL
+.owl-theme .owl-controls .owl-buttons {
+  div {
+    background: transparent;
+    color: $white;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+
+    &.owl-prev {
+      left: 16px;
+    }
+
+    &.owl-next {
+      right: 16px;
+    }
+  }
+}
+
+.owl-theme {
+  .owl-pagination {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+
+    .owl-page {
+      span {
+        background: $light-gray;
+        height: 8px;
+        width: 8px;
+      }
+    }
+  }
+}

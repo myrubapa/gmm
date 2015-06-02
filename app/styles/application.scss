@@ -2,3 +2,11 @@
 @import 'base/base';
 @import 'neat';
 @import 'global';
+
+// Pages
+@import 'pages/hero';
+@import 'pages/programs';
+@import 'pages/program-preview';
+
+
+@import 'extends/hero';
