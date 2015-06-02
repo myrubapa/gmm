@@ -9,7 +9,7 @@
     text-transform: uppercase;
     font-size: 3.5em;
     line-height: 1;
-    margin: 0 auto;
+    margin: 0 auto .15em;
     max-width: 38rem;
 
     @include media($medium) {
@@ -24,12 +24,11 @@
   .hero-subhead {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
-    margin: 0 auto 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 auto 2em;
     max-width: 38rem;
-
-    @include media($medium) {
-      font-size: 1.25em;
-    }
+    text-transform: uppercase;
   }
 
   .btn {

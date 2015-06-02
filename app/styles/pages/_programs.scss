@@ -1,5 +1,9 @@
 .program {
+  border-top:1px solid $white;
+
   article {
+    background: $black;
+    background: rgba($black, .45);
     border-radius: $base-border-radius;
     color: $white;
     padding: 1em;
@@ -61,26 +65,22 @@
   &.eat-well {
     background-image: url('../images/programs/bg-eat-well.jpg');
     background-attachment: fixed;
-
-    article {
-      background: $black;
-      background: rgba($black, .45);
-    }
   }
 
 
   &.stay-healthy {
     background-image: url('../images/programs/bg-stay-healthy.jpg');
+
+    article {
+      @include media($x-large) {
+        background: transparent;
+      }
+    }
   }
 
 
   &.do-good {
     background-image: url('../images/programs/bg-do-good.jpg');
     background-attachment: fixed;
-
-    article {
-      background: $black;
-      background: rgba($black, .45);
-    }
   }
 }

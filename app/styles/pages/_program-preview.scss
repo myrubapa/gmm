@@ -48,8 +48,12 @@
       padding: .25em .75em;
 
       &:hover {
-        background: $white;
-        color: $black;
+        background: $green;
+        border-color: $green;
+      }
+
+      .fa {
+        margin-top: .25em;
       }
     }
   }

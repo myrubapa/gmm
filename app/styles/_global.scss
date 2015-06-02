@@ -1,23 +1,77 @@
+body {
+  background-color: $black;
+}
+
 .header-primary {
   @include clearfix;
-  background: $orange;
-  color: $white;
-  left: 0;
-  opacity: .95;
-  padding: 1em;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 100;
+  overflow: hidden;
+  height:95vh;
+  position: relative;
+  width: 100%;
 
   .logo {
-    float: left;
+    @include hide-text;
+    background-image: url("../images/logo/logo-header.png");
+    background-attachment: fixed;
+    background-color: rgba($black, 0.75);
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 410px 313px;
     margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
   }
 
-  .phone-number {
-    float: right;
-    margin-bottom: 0;
+  .phone-wrap {
+    bottom: 3em;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    z-index: 2;
+
+    .phone-number {
+      color: $white;
+      font-size: .85em;
+      font-weight: 400;
+      text-transform: uppercase;
+
+      .number {
+        font-size: 1.5em;
+        font-weight: 800;
+        display: block;
+      }
+    }
+
+    .scroll-link {
+      border: 1px solid $white;
+      border-radius: 50%;
+      color: $white;
+      display: block;
+      height: 48px;
+      margin: 0 auto;
+      padding: .75em;
+      text-align: center;
+      width: 48px;
+    }
+  }
+}
+
+.header-primary {
+  .bgvid {
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+    right: 0;
+    width: auto;
+    z-index: -1;
   }
 }
 
@@ -33,6 +87,9 @@
 
 
 .content-primary {
+  background-color: $white;
+  position: static;
+
   .page-content {
     padding: 3.5em 0;
 
