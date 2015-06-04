@@ -1,0 +1,16 @@
+.step-up {
+  background: tint($black, 85%);
+
+  h1 {
+    text-align: center;
+  }
+
+  .well {
+    padding: 1em;
+
+    @include media($medium) {
+      @include span-columns(6);
+      padding: 3em;
+    }
+  }
+}

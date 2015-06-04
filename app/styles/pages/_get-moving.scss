@@ -1,0 +1,53 @@
+.get-moving {
+  background-attachment: fixed;
+  background-image: url('../images/programs/bg-get-moving.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: tint($light-gray, 85%);
+  border-bottom: 1px solid $base-border-color;
+  color: $white;
+  text-align: center;
+
+  .hexagon {
+    position: relative;
+    width: 128px;
+    height: 73.90px;
+    background-color: $black;
+    background-color: rgba($black, .25);
+    margin: 37px auto 50px;
+    display: block;
+
+    &:before,
+    &:after {
+      border-left: 64px solid transparent;
+      border-right: 64px solid transparent;
+      content: "";
+      left: 0;
+      position: absolute;
+      width: 0;
+    }
+
+    &:before {
+      border-bottom: 36.95px solid rgba($black, .25);
+      bottom: 100%;
+    }
+
+    &:after {
+      border-top: 36.95px solid rgba($black, .25);
+      top: 100%;
+      width: 0;
+    }
+  }
+
+  .hexagon {
+    .fa {
+      color: $white;
+      font-size: 5em;
+
+      &.fa-calendar {
+        font-size: 4.35em;
+      }
+    }
+  }
+}

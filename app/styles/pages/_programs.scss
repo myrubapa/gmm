@@ -64,12 +64,12 @@
 
   &.eat-well {
     background-image: url('../images/programs/bg-eat-well.jpg');
-    background-attachment: fixed;
   }
 
 
   &.stay-healthy {
     background-image: url('../images/programs/bg-stay-healthy.jpg');
+    background-attachment: fixed;
 
     article {
       @include media($x-large) {
@@ -81,6 +81,5 @@
 
   &.do-good {
     background-image: url('../images/programs/bg-do-good.jpg');
-    background-attachment: fixed;
   }
 }
