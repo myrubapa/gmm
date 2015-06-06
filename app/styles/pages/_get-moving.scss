@@ -9,6 +9,19 @@
   color: $white;
   text-align: center;
 
+  .container {
+    background-image: url('../images/logo/logo-white-trans.png');
+    background-position: 50% 75%;
+    background-repeat: no-repeat;
+    background-size: 325px 251px;
+
+    @include media($small-only) {
+      background-attachment: fixed;
+      background-position: 2em 2em;
+    }
+  }
+
+
   .hexagon {
     @include transition(all .35s ease-in-out);
     position: relative;
@@ -42,6 +55,7 @@
     }
   }
 
+
   .hexagon {
     .fa {
       color: $white;
@@ -52,6 +66,7 @@
       }
     }
   }
+
 
   .tier {
     color: $white;
