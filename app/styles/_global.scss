@@ -14,7 +14,7 @@ body {
     @include hide-text;
     background-image: url("../images/logo/logo-header.png");
     background-attachment: fixed;
-    background-color: rgba($black, 0.75);
+    background-color: rgba($black, 0.35);
     background-position: 50% 25%;
     background-repeat: no-repeat;
     background-size: 410px 313px;
@@ -131,6 +131,7 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   font-size: 3.5em;
+  text-align: center;
 }
 
 
@@ -138,6 +139,67 @@ body {
   article {
     @include media($medium) {
       @include span-columns(4);
+    }
+  }
+}
+
+.footer-primary {
+  background: $orange;
+  color: $white;
+  padding: 1em 0;
+
+  @include media($small-only) {
+    text-align: center;
+  }
+
+  .logo {
+    @include hide-text;
+    background-image: url("../images/logo/logo-gmm.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 0;
+    height: 52px;
+    width: 127px;
+
+    @include media($medium) {
+      @include span-columns(6);
+      background-size: 127px 52px;
+      background-position: left center;
+    }
+  }
+
+  .legal {
+    @include media($medium) {
+      @include span-columns(6);
+      text-align: right;
+    }
+
+    .nav-social {
+      margin-bottom: .5em;
+
+      .nav-item {
+        border: 1px solid rgba($white, .75);
+        color: $white;
+        color: rgba($white, .75);
+        display: inline-block;
+        font-size: 1.25em;
+        height: 32px;
+        padding: 0 .25em;
+        text-align: center;
+        width: 32px;
+
+        &:hover {
+          background-color: $white;
+          color: $orange;
+          border: 1px solid $white;
+        }
+      }
+    }
+
+    .copyright {
+      font-size: .85em;
+      margin-bottom: 0;
     }
   }
 }

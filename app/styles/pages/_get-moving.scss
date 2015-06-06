@@ -10,6 +10,7 @@
   text-align: center;
 
   .hexagon {
+    @include transition(all .35s ease-in-out);
     position: relative;
     width: 128px;
     height: 73.90px;
@@ -20,6 +21,7 @@
 
     &:before,
     &:after {
+      @include transition(all .35s ease-in-out);
       border-left: 64px solid transparent;
       border-right: 64px solid transparent;
       content: "";
@@ -47,6 +49,52 @@
 
       &.fa-calendar {
         font-size: 4.35em;
+      }
+    }
+  }
+
+  .tier {
+    color: $white;
+    display: block;
+    margin: 6.5em auto 0;
+
+    @include media($medium) {
+      padding: 0 2em;
+    }
+
+    &:hover {
+      .hexagon {
+        background-color: $orange;
+        background-color: rgba($orange, .65);
+
+        &:before {
+          border-bottom: 36.95px solid rgba($orange, .65);
+          bottom: 100%;
+        }
+
+        &:after {
+          border-top: 36.95px solid rgba($orange, .65);
+          top: 100%;
+          width: 0;
+        }
+      }
+    }
+
+    &.half {
+      @include media($medium) {
+        @include span-columns(6);
+      }
+    }
+
+    p {
+      margin: 0 auto 1.5em;
+    }
+
+    .btn {
+      &:hover {
+        background: $green;
+        background-color: rgba($green, .85);
+        border: 1px solid $green;
       }
     }
   }

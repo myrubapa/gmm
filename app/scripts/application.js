@@ -14,7 +14,7 @@ $(document).ready(function() {
   function scrollBanner() {
     $(document).scroll(function(){
       var scrollPos = $(this).scrollTop();
-      $('.logo').css({
+      $('#logo-header').css({
         'top' : (scrollPos/3)+'px',
         'opacity' : 1-(scrollPos/410)
       });
