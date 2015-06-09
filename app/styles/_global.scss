@@ -1,6 +1,14 @@
 body {
   background-color: $black;
   margin-bottom: 63px;
+
+  &.hide {
+    margin-bottom: 0;
+  }
+
+  @include media($small-only) {
+    margin-bottom: 0;
+  }
 }
 
 .header-primary {
@@ -135,6 +143,19 @@ body {
 }
 
 
+.headline {
+  text-transform: uppercase;
+  font-size: .75em;
+
+  span {
+    font-family: 'Amatic SC', cursive;
+    font-size: 3.5em;
+    font-weight: 400;
+    display: block;
+  }
+}
+
+
 .triptych {
   article {
     @include media($medium) {
@@ -158,7 +179,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
-    margin-bottom: 0;
+    margin: 0 auto 1em;
     height: 52px;
     width: 127px;
 
@@ -166,6 +187,7 @@ body {
       @include span-columns(6);
       background-size: 127px 52px;
       background-position: left center;
+      margin-bottom: 0;
     }
   }
 

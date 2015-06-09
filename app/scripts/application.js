@@ -69,9 +69,11 @@ $(document).ready(function() {
          wS = $(this).scrollTop();
      if (wS > (hT+hH-wH)){
        $('#sneak-peek').addClass('hide');
+       $('body').addClass('hide');
      }
      else if (wS < (hT+hH-wH)) {
       $('#sneak-peek').removeClass('hide');
+      $('body').removeClass('hide');
      };
   });
 

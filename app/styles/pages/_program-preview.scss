@@ -26,18 +26,6 @@
       }
     }
 
-    .headline {
-      text-transform: uppercase;
-      font-size: .75em;
-
-      span {
-        font-family: 'Amatic SC', cursive;
-        font-size: 3.5em;
-        font-weight: 400;
-        display: block;
-      }
-    }
-
     .read-more {
       @include transition(all .35s ease-in-out);
       border: 1px solid $white;

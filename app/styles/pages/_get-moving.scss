@@ -11,7 +11,7 @@
 
   .container {
     background-image: url('../images/logo/logo-white-trans.png');
-    background-position: 50% 75%;
+    background-position: 10% 10%;
     background-repeat: no-repeat;
     background-size: 325px 251px;
 
@@ -19,6 +19,22 @@
       background-attachment: fixed;
       background-position: 2em 2em;
     }
+
+    @include media($medium) {
+      background-position: 50% 54%;
+    }
+
+    @include media($large) {
+      background-position: 50% 60%;
+    }
+  }
+
+  .section-headline {
+    margin-bottom: .25em;
+  }
+
+  .subhead {
+    margin: 0 auto 1.5em;
   }
 
 
@@ -103,14 +119,13 @@
 
     p {
       margin: 0 auto 1.5em;
+      max-width: 27rem;
     }
 
-    // .btn {
-    //   &:hover {
-    //     background: $green;
-    //     background-color: rgba($green, .85);
-    //     border: 1px solid $green;
-    //   }
-    // }
+    &.step-up {
+      p {
+        margin-bottom: 1em;
+      }
+    }
   }
 }

@@ -6,7 +6,7 @@
     background: rgba($black, .45);
     border-radius: $base-border-radius;
     color: $white;
-    padding: 1em;
+    padding: 1em 1em 2em;
 
     @include media($medium) {
       @include span-columns(7);
