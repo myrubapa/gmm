@@ -2,11 +2,11 @@ body {
   background-color: $black;
   margin-bottom: 63px;
 
-  &.hide {
+  @include media($small-only) {
     margin-bottom: 0;
   }
 
-  @include media($small-only) {
+  &.hide {
     margin-bottom: 0;
   }
 }
