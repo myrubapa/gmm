@@ -26,6 +26,12 @@
     }
   }
 
+  &.hide {
+    @include media($medium) {
+      bottom: -63px;
+    }
+  }
+
   article {
     @include clearfix;
     margin: 0 auto;

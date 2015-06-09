@@ -62,4 +62,18 @@ $(document).ready(function() {
   }), 250);
 
 
+  $(window).scroll(function() {
+     var hT = $('#do-good').offset().top,
+         hH = $('#do-good').outerHeight(),
+         wH = $(window).height(),
+         wS = $(this).scrollTop();
+     if (wS > (hT+hH-wH)){
+       $('#sneak-peek').addClass('hide');
+     }
+     else if (wS < (hT+hH-wH)) {
+      $('#sneak-peek').removeClass('hide');
+     };
+  });
+
+
 });
