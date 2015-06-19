@@ -13,59 +13,60 @@ body {
 
 .header-primary {
   @include clearfix;
-  overflow: hidden;
-  height:95vh;
-  position: relative;
-  width: 100%;
+  background-color: $black;
+  background-color: rgba($black, .65);
+  padding: .5em 0 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
 
   .logo {
     @include hide-text;
-    background-image: url("../images/logo/logo-header.png");
-    background-attachment: fixed;
-    background-color: rgba($black, 0.35);
-    background-position: 50% 25%;
+    background-image: url("../images/logo/logo-gmm.png");
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: 410px 313px;
-    margin-bottom: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
+    background-size: 100%;
+    margin: .25em auto;
+    padding: .5em 0;
+    height: 52px;
+    width: 127px;
+
+    @include media($medium) {
+      float: left;
+      margin: 0;
+    }
   }
 
-  .phone-wrap {
-    bottom: 3em;
-    left: 0;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    z-index: 2;
+  .nav-primary {
+    display: none;
 
-    .phone-number {
-      color: $white;
-      font-size: .85em;
-      font-weight: 400;
-      text-transform: uppercase;
-
-      .number {
-        font-size: 1.5em;
-        font-weight: 800;
-        display: block;
-      }
+    @include media($medium) {
+      @include span-columns(6);
+      display: block;
+      float: right;
+      overflow: hidden;
+      padding: 1em 0 0;
+      text-align: right;
     }
 
-    .scroll-link {
-      border: 1px solid $white;
-      border-radius: 50%;
+    .nav-item {
+      @include transition(all .25s ease-in-out);
+      border-bottom: 3px solid transparent;
       color: $white;
-      display: block;
-      height: 48px;
-      margin: 0 auto;
-      padding: .75em;
-      text-align: center;
-      width: 48px;
+      display: inline-block;
+      font-size: .75em;
+      font-weight: bold;
+      line-height: 1;
+      padding: 0 1em 2em;
+      text-transform: uppercase;
+
+      &:hover {
+        @include transition(all .75s ease-in-out);
+        border-color: $green;
+        color: $white;
+      }
     }
   }
 }

@@ -11,18 +11,6 @@ $(document).ready(function() {
 
   $('.scroll-link').smoothScroll();
 
-  function scrollBanner() {
-    $(document).scroll(function(){
-      var scrollPos = $(this).scrollTop();
-      $('#logo-header').css({
-        'top' : (scrollPos/3)+'px',
-        'opacity' : 1-(scrollPos/410)
-      });
-    });
-  }
-  scrollBanner();
-
-
 
   var delta, didScroll, hasScrolled, lastScrollTop, navbarHeight;
 
