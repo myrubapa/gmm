@@ -1,4 +1,4 @@
-.get-moving {
+.lets-go {
   background-attachment: fixed;
   background-image: url('../images/programs/bg-get-moving.jpg');
   background-position: center center;
@@ -16,12 +16,12 @@
     background-size: 325px 251px;
 
     @include media($small-only) {
-      background-attachment: fixed;
       background-position: 2em 2em;
     }
 
     @include media($medium) {
-      background-position: 50% 54%;
+      background-attachment: fixed;
+      background-position: 10% 48%;
     }
 
     @include media($large) {

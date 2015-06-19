@@ -32,10 +32,10 @@ $(document).ready(function() {
       return;
     }
     if (st > lastScrollTop && st > navbarHeight) {
-      $('#sneak-peek').removeClass('nav-up').addClass('nav-down');
+      $('#sneak-peek').removeClass('peek-up').addClass('peek-down');
     } else {
       if (st + $(window).height() < $(document).height()) {
-        $('#sneak-peek').removeClass('nav-down').addClass('nav-up');
+        $('#sneak-peek').removeClass('peek-down').addClass('peek-up');
       }
     }
     lastScrollTop = st;

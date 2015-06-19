@@ -14,13 +14,13 @@
     display: none;
   }
 
-  &.nav-down {
+  &.peek-up {
     @include media($medium) {
       bottom: 0;
     }
   }
 
-  &.nav-up {
+  &.peek-down {
     @include media($medium) {
       bottom: -63px;
     }
@@ -60,6 +60,10 @@
       @include span-columns(6);
       padding: .45em 0 0;
       text-align: center;
+    }
+
+    .btn {
+      color: $white;
     }
   }
 }

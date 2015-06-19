@@ -175,21 +175,37 @@ body {
     text-align: center;
   }
 
-  .logo {
-    @include hide-text;
-    background-image: url("../images/logo/logo-gmm.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin: 0 auto 1em;
-    height: 52px;
-    width: 127px;
-
+  .logo-wrap {
     @include media($medium) {
       @include span-columns(6);
-      background-size: 127px 52px;
-      background-position: left center;
-      margin-bottom: 0;
+    }
+
+    .logo {
+      @include hide-text;
+      background-image: url("../images/logo/logo-gmm.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      margin: 0 auto 1em;
+      height: 52px;
+      width: 127px;
+
+      @include media($medium) {
+        background-size: 127px 52px;
+        background-position: left center;
+        float: left;
+        margin: 0 .5em 0;
+      }
+    }
+
+    .tagline {
+      font-size: .8em;
+      font-weight: normal;
+      padding: 0 0 1em;
+
+      @include media($medium) {
+        padding: 1.35em 0 0;
+      }
     }
   }
 

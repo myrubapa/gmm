@@ -3,15 +3,15 @@
     @extend %hero;
     background-size: cover;
     height:95vh;
-    padding: 8em 1em;
+    padding: 10em 1em 8em;
     text-align: center;
 
     @include media($medium) {
-      padding: 10em 1em;
+      padding: 11em 1em;
     }
 
     @include media($large) {
-      padding: 11em 0;
+      padding: 13em 0;
       max-height: 700px;
     }
 
@@ -19,19 +19,19 @@
       padding: 12em 0;
     }
 
-    &.slide-one {
+    &.join {
       background-image: url('../images/hero/slide1.jpg');
     }
 
-    &.slide-two {
-      background-image: url('../images/hero/slide4.jpg');
-    }
-
-    &.slide-three {
+    &.good-measure {
       background-image: url('../images/hero/slide3.jpg');
     }
 
-    &.slide-four {
+    &.culinary-art {
+      background-image: url('../images/hero/slide4.jpg');
+    }
+
+    &.super-hero {
       background-image: url('../images/hero/slide2.jpg');
     }
   }
