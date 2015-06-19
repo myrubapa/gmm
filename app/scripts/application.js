@@ -1,7 +1,10 @@
 $(document).ready(function() {
+'use strict';
 
   $('#hero-carousel').owlCarousel({
+      autoPlay : true,
       navigation : true,
+      navigationText : false,
       slideSpeed : 450,
       paginationSpeed : 400,
       mouseDrag : false,
@@ -38,7 +41,7 @@ $(document).ready(function() {
     lastScrollTop = st;
   };
 
-  $(window).scroll(function(event) {
+  $(window).scroll(function() {
     didScroll = true;
   });
 
@@ -62,7 +65,7 @@ $(document).ready(function() {
      else if (wS < (hT+hH-wH)) {
       $('#sneak-peek').removeClass('hide');
       $('body').removeClass('hide');
-     };
+     }
   });
 
 

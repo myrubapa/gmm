@@ -46,12 +46,38 @@
     top: 50%;
     bottom: 0;
 
+    &.owl-prev,
+    &.owl-next {
+      height: 48px;
+      width: 48px;
+    }
+
     &.owl-prev {
       left: 16px;
+
+      &:after {
+        font-family: FontAwesome;
+        content: "\f104";
+        display: inline-block;
+        font-size: 5em;
+        line-height: .5;
+        padding-right: 3px;
+        vertical-align: middle;
+      }
     }
 
     &.owl-next {
       right: 16px;
+
+      &:after {
+        font-family: FontAwesome;
+        content: "\f105";
+        display: inline-block;
+        font-size: 5em;
+        line-height: .5;
+        padding-right: 3px;
+        vertical-align: middle;
+      }
     }
   }
 }
