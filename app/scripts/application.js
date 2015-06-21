@@ -2,14 +2,13 @@ $(document).ready(function() {
 'use strict';
 
   $('#hero-carousel').owlCarousel({
-      autoPlay : true,
-      navigation : true,
-      navigationText : false,
-      slideSpeed : 450,
-      paginationSpeed : 400,
+      autoplay : true,
+      dots : true,
+      items : 1,
+      loop:true,
       mouseDrag : false,
-      autoHeight : true,
-      singleItem:true
+      nav : true,
+      navText : ['','']
   });
 
   $('.scroll-link').smoothScroll();
