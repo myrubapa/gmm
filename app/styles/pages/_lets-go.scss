@@ -9,32 +9,35 @@
   color: $white;
   text-align: center;
 
-  .container {
-    background-image: url('../images/logo/logo-white-trans.png');
-    background-position: 10% 10%;
-    background-repeat: no-repeat;
-    background-size: 325px 251px;
-
-    @include media($small-only) {
-      background-position: 2em 2em;
-    }
-
-    @include media($medium) {
-      background-attachment: fixed;
-      background-position: 10% 48%;
-    }
-
-    @include media($large) {
-      background-position: 50% 60%;
-    }
-  }
-
   .section-headline {
     margin-bottom: .25em;
   }
 
   .subhead {
     margin: 0 auto 1.5em;
+    font-family: $base-font-family;
+    font-weight: 300;
+    text-transform: initial;
+
+    span {
+      display: block;
+    }
+  }
+
+  .logo {
+    @include hide-text;
+    background-image: url('../images/logo/logo-header.png');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 2.5em auto;
+    width: 325px;
+    height: 251px;
+
+    @include media($medium) {
+      width: 325px;
+      height: 251px;
+    }
   }
 
 
@@ -87,7 +90,7 @@
   .tier {
     color: $white;
     display: block;
-    margin: 6.5em auto 0;
+    margin: 0 auto;
 
     @include media($medium) {
       padding: 0 2em;

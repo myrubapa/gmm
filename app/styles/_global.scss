@@ -13,8 +13,8 @@ body {
 
 .header-primary {
   @include clearfix;
-  background-color: $black;
-  background-color: rgba($black, .65);
+  background-color: $green-dark;
+  background-color: rgba($green-dark, .65);
   padding: .5em 0 0;
   position: fixed;
   left: 0;
@@ -64,7 +64,7 @@ body {
 
       &:hover {
         @include transition(all .75s ease-in-out);
-        border-color: $green;
+        border-color: $white;
         color: $white;
       }
     }
@@ -138,9 +138,16 @@ body {
 .section-headline {
   font-family: 'Amatic SC', cursive;
   font-weight: 400;
+  max-width: 50rem;
+  margin: 0 auto .75em;
   text-transform: uppercase;
   font-size: 3.5em;
   text-align: center;
+
+  sup {
+    font-size: .35em;
+    top: -1.5em;
+  }
 }
 
 
