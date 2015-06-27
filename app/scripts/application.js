@@ -3,6 +3,7 @@ $(document).ready(function() {
 
   $('#hero-carousel').owlCarousel({
       autoplay : true,
+      smartSpeed : 650,
       dots : true,
       items : 1,
       loop:true,
