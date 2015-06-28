@@ -13,8 +13,8 @@ body {
 
 .header-primary {
   @include clearfix;
-  background-color: $green-dark;
-  background-color: rgba($green-dark, .65);
+  background-color: $black;
+  background-color: rgba($black, .65);
   padding: .5em 0 0;
   position: fixed;
   left: 0;

@@ -1,6 +1,6 @@
 .sneak-peek {
   @include transition(bottom 0.25s linear);
-  background: $green;
+  background: $green-dark;
   border-top: 1px solid $white;
   bottom: 0;
   color: $white;
