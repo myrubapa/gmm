@@ -2,12 +2,12 @@
   .item {
     @extend %hero;
     background-size: cover;
-    height:95vh;
     padding: 10em 1em 8em;
     text-align: center;
 
     @include media($medium) {
       padding: 11em 1em;
+      height:95vh;
     }
 
     @include media($large) {
@@ -37,7 +37,12 @@
 
     &.super-hero {
       background-image: url('../images/hero/slide2.jpg');
-      padding: 8em 0 12em;
+      padding: 6em 1em 8em;
+
+      @include media($large) {
+        padding: 8em 0 12em;
+      }
+
 
       .hero-headline {
         @include hide-text;
@@ -45,8 +50,9 @@
         background-position: 50%;
         background-repeat: no-repeat;
         background-size: 100%;
-        width: 325px;
-        height: 251px;
+        height: 161px;
+        margin-bottom: .5em;
+        width: 210px;
 
         @include media($medium) {
           width: 325px;
@@ -71,6 +77,10 @@
       height: 48px;
       opacity: .45;
       width: 48px;
+
+      @include media($small-only) {
+        display: none;
+      }
 
       &:hover {
         opacity: .75;
@@ -109,10 +119,15 @@
 
 .owl-dots {
   bottom: 0;
+  display: none;
   left: 0;
   position: absolute;
   right: 0;
   text-align: center;
+
+  @include media($medium) {
+    display: block;
+  }
 
   .owl-dot {
     background: $light-gray;

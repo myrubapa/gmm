@@ -30,13 +30,13 @@
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: 100%;
+    height: 161px;
     margin: 2.5em auto;
-    width: 325px;
-    height: 251px;
+    width: 210px;
 
     @include media($medium) {
-      width: 325px;
       height: 251px;
+      width: 325px;
     }
   }
 
