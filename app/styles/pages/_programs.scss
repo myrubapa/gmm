@@ -67,6 +67,10 @@
     background-image: url('../images/programs/bg-stay-healthy.jpg');
     background-attachment: fixed;
 
+    @include media($medium-below) {
+      background-position: 100% 0;
+    }
+
     article {
       @include media($x-large) {
         background: transparent;
