@@ -3,6 +3,17 @@
     margin: 0 auto .25em;
   }
 
+  .logo-pzi {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    padding: 1.5em 0;
+
+    @include media($medium) {
+      max-width: 350px;
+    }
+  }
+
   .hashtag {
     color: $blue;
   }
