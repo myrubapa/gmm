@@ -31,7 +31,9 @@
       </div>
     </header>
 
-    {% include section/sneak-peek.html %}
+    {% if page.body_class != "pzi" %}
+      {% include section/sneak-peek.html %}
+    {% endif %}
 
     <main id="content-primary" class="content-primary">
       {{ content }}

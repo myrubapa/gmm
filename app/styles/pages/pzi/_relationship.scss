@@ -1,0 +1,21 @@
+.relationship {
+  text-align: center;
+
+  blockquote {
+    font-family: $georgia;
+    font-size: 1.75em;
+    max-width: 48rem;
+    margin: 0 auto;
+
+    .author {
+      font-size: .5em;
+      padding: 1.5em 0;
+      text-transform: uppercase;
+    }
+  }
+
+  .disclaimer {
+    font-family: $georgia;
+    font-style: italic;
+  }
+}
