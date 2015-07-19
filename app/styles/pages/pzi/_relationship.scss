@@ -1,6 +1,35 @@
 .relationship {
   text-align: center;
 
+  .item {
+    @extend %hero;
+    background-size: cover;
+    padding: 10em 1em 8em;
+    text-align: center;
+
+    @include media($medium) {
+      padding: 11em 1em;
+      height:75vh;
+    }
+
+    @include media($large) {
+      padding: 13em 0;
+      max-height: 600px;
+    }
+
+    @include media($x-large) {
+      padding: 12em 0;
+    }
+
+    &.new-customer {
+      background-image: url('../images/relationship/bg-relationship-new-customer.jpg');
+    }
+
+    &.customer {
+      background-image: url('../images/relationship/slide1.jpg');
+    }
+  }
+
   blockquote {
     font-family: $georgia;
     font-size: 1.75em;
@@ -17,5 +46,6 @@
   .disclaimer {
     font-family: $georgia;
     font-style: italic;
+    margin: 1em auto;
   }
 }

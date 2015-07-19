@@ -90,6 +90,89 @@ body {
 }
 
 
+//CAROUSEL
+.owl-nav {
+  div {
+    background: transparent;
+    color: $white;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+
+    &.owl-prev,
+    &.owl-next {
+      height: 48px;
+      opacity: .45;
+      width: 48px;
+
+      @include media($small-only) {
+        display: none;
+      }
+
+      &:hover {
+        opacity: .75;
+      }
+    }
+
+    &.owl-prev {
+      left: 16px;
+
+      &:after {
+        font-family: FontAwesome;
+        content: "\f104";
+        display: inline-block;
+        font-size: 5em;
+        line-height: .5;
+        padding-right: 3px;
+        vertical-align: middle;
+      }
+    }
+
+    &.owl-next {
+      right: 16px;
+
+      &:after {
+        font-family: FontAwesome;
+        content: "\f105";
+        display: inline-block;
+        font-size: 5em;
+        line-height: .5;
+        padding-right: 3px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.owl-dots {
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+
+  @include media($medium) {
+    display: block;
+  }
+
+  .owl-dot {
+    background: $light-gray;
+    border-radius: 50%;
+    display: inline-block;
+    height: 8px;
+    margin: 0 .5em;
+    opacity: .45;
+    width: 8px;
+
+    &.active  {
+      opacity: .75;
+    }
+  }
+}
+
+
+
 .btn {
   @include transition(all .35s ease-in-out);
   border: 1px solid $white;
@@ -134,6 +217,10 @@ body {
     @include media($large) {
       padding: 7em 0;
     }
+
+    &.relationship {
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -168,6 +255,13 @@ body {
     font-weight: 400;
     display: block;
   }
+}
+
+.sub-head {
+  text-transform: uppercase;
+  font-size: .75em;
+  max-width: 38rem;
+  margin: 0 auto 2.5em;
 }
 
 
