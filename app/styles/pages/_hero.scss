@@ -42,23 +42,6 @@
       @include media($large) {
         padding: 8em 0 12em;
       }
-
-
-      .hero-headline {
-        @include hide-text;
-        background-image: url('../images/logo/logo-header.png');
-        background-position: 50%;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        height: 161px;
-        margin-bottom: .5em;
-        width: 210px;
-
-        @include media($medium) {
-          width: 325px;
-          height: 251px;
-        }
-      }
     }
   }
 }

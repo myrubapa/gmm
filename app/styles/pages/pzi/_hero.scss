@@ -7,17 +7,18 @@
     text-align: center;
 
     @include media($medium) {
-      padding: 11em 1em;
+      padding: 8em 1em;
       height:95vh;
     }
 
     @include media($large) {
-      padding: 13em 0;
       max-height: 700px;
     }
 
-    @include media($x-large) {
-      padding: 12em 0;
+    .hero-subhead {
+      font-family: 'Amatic SC', cursive;
+      font-size: 1.5em;
+      margin-bottom: .25em;
     }
 
     p {

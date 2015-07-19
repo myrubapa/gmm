@@ -74,18 +74,31 @@ body {
   }
 }
 
-
-.header-primary {
-  .bgvid {
+.hero {
+  .hero-headline {
+    @include hide-text;
+    background-image: url('../images/logo/logo-header.png');
+    background-position: 50%;
     background-repeat: no-repeat;
-    background-size: cover;
-    bottom: 0;
-    height: auto;
-    min-height: 100%;
-    min-width: 100%;
-    right: 0;
-    width: auto;
-    z-index: -1;
+    background-size: 100%;
+    height: 161px;
+    margin-bottom: .5em;
+    width: 210px;
+
+    @include media($medium) {
+      width: 325px;
+      height: 251px;
+    }
+  }
+
+  .hero-subhead {
+    font-family: $base-font-family;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 auto 2em;
+    max-width: 38rem;
+    text-transform: uppercase;
   }
 }
 
