@@ -46,7 +46,7 @@ body {
     display: none;
 
     @include media($medium) {
-      @include span-columns(8);
+      @include span-columns(10);
       display: block;
       float: right;
       overflow: hidden;
@@ -271,10 +271,11 @@ body {
 }
 
 .sub-head {
-  text-transform: uppercase;
-  font-size: .75em;
-  max-width: 38rem;
-  margin: 0 auto 2.5em;
+  font-size: 1.25em;
+  font-weight: 100;
+  margin: 0 auto .5em;
+  max-width: 52rem;
+  text-align: center;
 }
 
 

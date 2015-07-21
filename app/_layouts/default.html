@@ -23,7 +23,14 @@
         <a href="/" title="Good Measure Meals™">
           <h1 id="logo-header" class="logo">Good Measure Meals™</h1>
         </a>
-        {% if page.body_class != "pzi" %}
+        {% if page.body_class == "pzi" %}
+        <nav class="nav-primary">
+          <a class="nav-item scroll-link" title="The Rules" href="#rules">The Rules</a>
+          <a class="nav-item scroll-link" title="The Challenge Pack" href="#challenge">The Challenge Pack</a>
+          <a class="nav-item scroll-link" title="Real Stories" href="#relationship">Real Stories</a>
+          <a class="nav-item scroll-link" title="GMM Difference" href="#difference">GMM Difference</a>
+        </nav>
+        {% else %}
         <nav class="nav-primary">
           <a class="nav-item scroll-link" title="Eat Well " href="#eat-well">Eat Well </a>
           <a class="nav-item scroll-link" title="Stay Healthy" href="#stay-healthy">Stay Healthy</a>
