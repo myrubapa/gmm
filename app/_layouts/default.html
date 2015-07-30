@@ -24,6 +24,8 @@
           <h1 id="logo-header" class="logo">Good Measure Meals™</h1>
         </a>
         {% if page.body_class == "pzi" %}
+        <h1 id="logo-header" class="logo">Good Measure Meals®</h1>
+
         <nav class="nav-primary">
           <a class="nav-item scroll-link" title="The Rules" href="#rules">The Rules</a>
           <a class="nav-item scroll-link" title="The Challenge Pack" href="#challenge">The Challenge Pack</a>
@@ -33,6 +35,7 @@
         {% else %}
         <nav class="nav-primary">
           <a class="nav-item scroll-link" title="Eat Well " href="#eat-well">Eat Well </a>
+          <a class="nav-item scroll-link" title="Eat Well " href="#eat-well">Eat Well</a>
           <a class="nav-item scroll-link" title="Stay Healthy" href="#stay-healthy">Stay Healthy</a>
           <a class="nav-item scroll-link" title="Do Good" href="#do-good">Do Good</a>
           <a class="nav-item scroll-link" title="Let's Go" href="#lets-go">Let's Go</a>
@@ -63,11 +66,12 @@
             <a class="nav-item" href="#" title=""><i class="fa fa-twitter"></i></a>
             <a class="nav-item" href="#" title=""><i class="fa fa-wordpress"></i></a>
           </nav>
-          <p class="copyright">©2015 Good Measure Meals™</p>
+          <p class="copyright">©2015 Good Measure Meals®</p>
         </div>
       </div>
     </footer>
 
+    {% include shared/authorization.html %}
     {% include shared/scripts.html %}
     {% include shared/google-analytics.html %}
   </body>
