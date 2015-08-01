@@ -1,6 +1,5 @@
 $(document).ready(function() {
 'use strict';
-  /*
   $('.owl-carousel').owlCarousel({
       autoplay : true,
       autoplayHoverPause : true,
@@ -12,7 +11,6 @@ $(document).ready(function() {
       nav : true,
       navText : ['','']
   });
-  */
   $('.scroll-link').smoothScroll();
 
 
